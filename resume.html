@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>Michael V. Wittmann</title>
+    <link rel="shortcut icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:300,700|Roboto|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>-->
+    <script type= "text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type= "text/javascript" src="mustache.js" ></script>
+    <script type="text/javascript" src="data.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>-->
+
+  </head>
+  <body>
+    <div id="header">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-6" style="display: inline-block;" id="logoTitle">
+              <img src="img/logo2.png" alt="Navigation logo as png">
+              <h1><a href="index.html">Michael V. Wittmann</a></h1>
+            </div>
+            <div class="col-md-6" style="float:right; text-align: right;">
+                <nav role="navigation">
+                    <ul>
+                        <li class="nav_item"><a href="about.html">About Me</a></li>
+                        <li class="nav_item"><a href="articles.html">My Articles</a></li>  
+                        <li class="nav_item"><a href="resume.html">Resume</a></li>
+                        <li class="nav_item"><a href="contact.html">Contact</a></li> 
+                    </ul>
+                  </nav>
+                  <div class="dropdown">
+                        <img src="img/menu.svg" alt="hamburger menu" class="dropbtn" style="float:right;">
+                        <div class="dropdown-content">
+                            <a href="about.html">About Me</a>
+                            <a href="articles.html">My Articles</a>
+                            <a href="resume.html">Resume</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div id="content-left" class="col-md-4" >
+          <h3 id="personalStatement">Personal Statement</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At eos modi nisi perspiciatis mollitia facilis voluptate commodi? Aspernatur quae, repudiandae ipsa, soluta exercitationem perspiciatis facilis odit saepe nam optio quia!</p>
+          <h3 id="education">Education</h3>
+          <h6 class="bold">Aurora University</h6>
+          <p class="italic">Masters of Social Work</p>
+          <h6 class="bold">Carroll University</h6>
+          <p class="italic">Bachelor of Science, Psychology - emphasis in Clinical/Counseling <br>
+          Bachelor of Arts, Religious Studies</p>
+          <h3 id="contactInfo">Contact</h3>
+          <p>1007 Maitland Dr. <br> Lockport, IL 60441 <br> (815)-212-3559 <br> Michael.V.Wittmann@gmail.com</p>
+        </div>
+        <div id="content-right" class="col-md-8">
+          <h3 id="skills">Skills</h3>
+          <div class="row">
+            <div id="skillsSec" class="col-md-12">
+              <script id="template" type="x-tmpl-mustache">
+                <ul>
+                  {{#skills}}
+                    <li>{{skill}}: {{level}}</li>
+                  {{/skills}}
+                </ul>
+              </script>
+            </div>
+            <!--<div class="col-md-6">
+              <p>test2</p>
+            </div>-->
+          </div>
+          <h3 id="workExperience">Work Experience</h3>
+          <h6 class="bold">Trinity Services: Psychotherapeutic Center <span>September 2011-Present</span></h6>
+          <p class="italic">Qualified Mental Health Professional/Therapist <span>Joliet, Illinois</span></p>
+            <ul class="experience">
+              <li> • Works with adults with various severe and chronic mental illnesses through individual, group, and community therapy.</li>
+              <li> • Trained in and applied FAP, ACT, and DBT therapy models.</li>
+              <li> • Independently mentors new students and staff on work policies, procedures, and daily expectations.</li>
+              <li> • Supervises students after the completion of Licensed Clinical Social Worker exam.</li>
+              <li> • Member of Behavioral Health Internal Systems and Quality Assurance Committee. Met with a team to discuss and implement strategies designed for staff team-building as well as new client experiences.</li>     
+            </ul>
+          <h6 class="bold">Rivals <span>November 2014-Present</span></h6>
+          <p class="italic">Recruiting Analyst <span>Remote</span></p>
+          <ul class="experience">
+            <li>•	Covers college football recruiting.</li>
+            <li>•	Talks to and builds relationships with high school football players being recruited by college football programs.</li>
+            <li>•	Report on and write articles on players and teams, focusing on news updates and player analysis.</li>
+          </ul>
+          <h6 class="bold">Faith Community Church <span>April 2011-October 2015</span></h6>
+          <p class="italic">Youth Minister <span>Stickney, Illinois</span></p>
+          <ul class="experience">
+            <li>•	Served as an adult model and leader for junior high and high school boys and girls.</li>
+            <li>•	Planned weekly meetings that included Bible lessons, games, and activities.</li>
+            <li>•	Developed relationships within the group and planned monthly events.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="footer" style="border-top: 5px solid #1bb3bf; border-width: 100%;">
+        <div class="row">
+          <div class="col-md-12" style="background-color: #2e2f33;">
+              <div class="col-12 col-md-5" style="display: inline-block;">
+                <div id="nav_footer">
+                  <ul class="nav_list" style="list-style-type: none;">
+                    <li class="nav_item"><a href="about.html">About Me</a></li>
+                    <li class="nav_item"><a href="articles.html">My Articles</a></li>  
+                    <li class="nav_item"><a href="resume.html">Resume</a></li>
+                    <li class="nav_item"><a href="contact.html">Contact</a></li>                  
+                  </ul>
+                </div>
+              </div>
+            <div class="col-12 col-md-2" id="footerLogo">
+                <a href="index.html"><img src="img/logo2.png" alt="footer logo as png" id="foot_logo"></a>
+            </div>
+            <!--Social media icons-->
+            <div class="col-12 col-md-5" id="socialMediaIcons">
+              <img src="img/twitter.svg" alt="twitter icon">
+              <img src="img/facebook.svg" alt="facebook icon">
+              <img src="img/linkedin.svg" alt="linkedin icon">
+              <img src="img/email.svg" alt="email icon">
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

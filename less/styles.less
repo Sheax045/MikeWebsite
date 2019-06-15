@@ -1,0 +1,570 @@
+//---VARIABLES---//
+@colorBlue: #1bb3bf;
+@colorGrey: #A8A8AA;
+@colorLtGrey: #EEEEEF;
+@colorDkGrey: #2E2F33;
+
+//---MIXINS---//
+
+.box-shadow (@shadow:0 1px 3px rgba(0, 0, 0, 0.55)) {
+	-webkit-box-shadow: @shadow;
+	-moz-box-shadow:    @shadow;
+    box-shadow:         @shadow;
+}
+    
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius:    @radius;
+    border-radius:         @radius;
+}
+
+/*---ALL---*/
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2{
+    margin-bottom: 5%;
+}
+
+/*---NAVIGATION--*/
+
+#header{
+    border-bottom: 5px solid @colorBlue; 
+    border-width: 100%;
+    background-color: @colorDkGrey;
+
+
+    img{
+        width: 10%; 
+        float: left; 
+        margin: 5% 5% 5% 0;
+    }
+}
+
+h1{
+    font-size: 3.625em;
+    display: inline-block; 
+    margin-top: 7%;
+}
+
+
+a{
+    color: white;
+
+    &:hover{
+        color: @colorBlue;
+        text-decoration: none;
+    }
+}
+
+
+li{
+    display: inline-block;
+    margin: 15% 5% 0 0;
+}
+
+/*---HAMBURGER MENU---*/
+
+/* Dropdown Button */
+
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+    img{
+        display: none;
+    }
+
+    /* Show the dropdown menu on hover */
+    &:hover .dropdown-content {display: block;}
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    &:hover .dropbtn {transform:scale(1.2);}
+        
+
+    .dropbtn {
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        float: right;
+        width: 15%;
+        
+      }
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin-left: 45%;
+
+        /* Links inside the dropdown */
+        a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+
+            /* Change color of dropdown links on hover */
+            &:hover {background-color: #ddd;}
+        }
+    }
+  }
+  
+
+  /*---MAIN---*/
+
+  #chicagoRiver{
+    width: 100%; 
+    height: 45%;
+  }
+
+  #aboutContent{
+      margin-top: -25%;
+  }
+
+  #profilePic{
+    .border-radius;
+    .box-shadow;
+  }
+
+/*---FOOTER---*/
+
+#nav_footer{
+    margin-top: -30%;
+}
+
+
+#footer img{
+    width: 35%; 
+    float: left; 
+    margin: 5% 0 5% 0;
+}
+
+#footerLogo{
+    display: inline-block;
+    margin-left: 6%;
+}
+
+
+#socialMediaIcons{
+    display: inline-block;
+    float: right;
+    text-align: right;
+    width: 15%;
+
+    img{
+        margin: 40% 10% 0 0;
+        width: 15%;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+    }
+}
+
+/*---ABOUT ME---*/
+
+#aboutMe {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    width: 100%;
+  }
+
+#profilePic{
+    height: 75%;
+    margin:auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/*---RESUME---*/
+
+#content-left{
+    border-right: 2px solid @colorGrey;
+    background-color: @colorLtGrey;
+}
+//#content-right{
+  //  background-color: @colorGrey;
+//}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+span{
+    font-weight: 400;
+    font-style: normal; 
+    float: right;
+}
+
+.experience{
+    list-style-type: circle;
+}
+.experience li{
+    list-style-type: circle;
+    margin: 0 0 0 0;
+}
+
+h3{
+    text-decoration: underline @colorBlue;
+}
+
+#personalStatement{
+    margin-top: 5%;
+}
+
+#skills{
+    margin-top: 2%;
+}
+
+
+//#skillsSec{
+  //  border-bottom: 2px solid @colorGrey;
+//}
+
+#skillsSec li{
+    margin: 0 5px;
+}
+
+/*---LANDING---*/
+
+video{
+    width: 100%;
+    //height: 100vh;
+    position: absolute;
+    opacity: .3;
+}
+
+#landingTitle:hover{
+    color: @colorLtGrey;
+}
+
+#landingTitle a{
+    color: @colorLtGrey;
+}
+
+#landing a:hover{
+    color: @colorLtGrey;
+}
+#landing li:hover{
+    transform: scale(1.1);
+}
+
+/*---CONTACT---*/
+
+#contactMe{
+    margin-top: 5%;
+}
+
+.marTop{
+    margin-top: 5%;
+}
+form{
+    display: inline-block;
+}
+
+.submit{
+    width: 5em;
+    background-color: #1BB3BF;
+    border-color: #1BB3BF;
+    color: white;
+    margin: 5% 0;
+    .box-shadow;
+}
+
+.submit:hover{
+    background-color: white;
+    border-color: #1BB3BF;
+    color: #1BB3BF;
+}
+
+input, textarea{
+    //box-shadow: 0 0 0 rgba(0, 0, 0, 0.55);
+    border: 1px solid @colorDkGrey;
+}
+
+/*---ARTICLES---*/
+
+#articleSec .col-md-4{
+    display: inline-block; 
+    float: right;
+    padding: 0;
+    border: 1px solid @colorGrey;
+}
+
+#articleSec{
+    margin-bottom: 10%;
+}
+
+#myArticles{
+    margin-top: 5%;
+}
+
+#articleSec h5{
+    margin: 2% 0 0 2%;
+    color: @colorBlue;
+}
+
+#articleSec p{
+    margin: 2% 2% 0 2%;
+    color: @colorDkGrey;
+}
+
+#articleSec a{
+    color: @colorBlue;
+}
+
+#articleSec a:hover{
+    color: @colorGrey;
+}
+
+.back a, .next a{
+    color: @colorDkGrey;
+}
+
+.back a:hover{
+    color: @colorBlue;
+}
+.next a:hover{
+    color: @colorBlue;
+}
+
+/*---ARTICLE 1---*/
+
+.articlesBody {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    width: 100%;
+    margin-top: 2%;
+  }
+
+  .sportsPic{
+      width: 100%;
+  }
+  .articleTitle{
+    margin-top: 5%;
+}
+
+#news h2, h4, h6{
+    margin-left: -15px;
+}
+
+/*---CSS MEDIA QUERIES---*/
+
+/*--- Extra small devices (portrait phones, less than 576px)---*/
+@media (min-width: 0px) and (max-width: 575.98px) { 
+    body{
+        font-size: 4vw;
+    }
+    nav{
+        display: none;
+    }
+    h1{
+        font-size: 7vw;
+    }
+
+    #chicagoRiver{
+        width: 100%; 
+        height: 55%;
+      }
+
+    .dropdown{
+        display: inline-block;
+        margin-top:-20%;
+
+        img{
+            display: inline-block;
+        }
+    }
+
+    #aboutMe{
+        margin-top: 15%;
+        margin-bottom: -5%;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        columns: 1;
+        width: 100%;
+
+    }
+    #profilePic{
+        height: 65%;
+        margin-top: 20%;
+    }
+    
+    #nav_footer{
+        text-align: center;
+        margin-top: -20%;
+    }
+/*--Get rid of logo at smaller sizes--*/
+    #footerLogo{
+       margin-left: 42%;
+       display: none;
+    }
+
+    #socialMediaIcons{
+        width:40%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float:none;
+
+        img{
+            margin: 10% 10% 0 0;
+            width: 15%;
+            float:left;
+        }
+    }
+
+    #news h2, h4, h6{
+        margin-left: 0.5%;
+    }
+    .articlesBody {
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        columns: 1;
+        width: 100%;
+        margin: 2%;
+      }
+ }
+ 
+/*--- Small devices (landscape phones, 576px and up)---*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    body{
+        font-size: 3vw;
+    }
+    h2{
+        font-size: 5vw;
+    }
+    nav{
+        display: none;
+    }
+    h1{
+        font-size: 6vw;
+        margin-top: 7%;
+    }
+    
+    .dropdown{
+        display: block;
+        margin-top:-23%;
+
+        .dropbtn{
+            width: 10%;
+            float: right;
+        }
+
+        img{
+            width: 15%;
+            display: block;
+        }
+
+        .dropdown-content{
+            margin-left:63%;
+        }
+    }
+
+    #chicagoRiver{
+        width: 100%; 
+        height: 55%;
+      }
+
+      #aboutMe{
+        margin-top: 15%;
+        margin-bottom: -5%;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        columns: 1;
+        width: 100%;
+    }
+    
+    #profilePic{
+        height: 60%;
+        margin-top: 20%;
+    }
+    #nav_footer{
+        margin-top: -20%;
+        text-align: center;
+    }
+
+    #footerLogo{
+        margin-left: 40%;
+        width: 35%;
+        margin-bottom: -12%;
+     }
+     
+     #socialMediaIcons{
+         width:40%;
+         margin-left: auto;
+         margin-right: auto;
+         display: block;
+         float:none;
+     } 
+
+     .articlesBody {
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        columns: 1;
+        width: 100%;
+      }
+ }
+
+/*--- Medium devices (tablets, 768px and up)---*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+    body{
+        font-size: 2vw;
+    }
+    h1{
+        font-size: 5vw;
+        display: inline-block; 
+        margin-top: 7%;
+    }
+
+    
+    #hamburger_menu:hover {
+        display: block;
+        transform: scale(1.2);
+    }
+    .dropdown img{
+        width: 20%;
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+
+    #aboutMe{
+        margin-bottom: 8%;
+    }
+
+
+/*--- Large devices (desktops, 992px and up)---*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    body{
+        font-size: 1.8vw;
+    }
+    #aboutContent{
+        margin-top: 20%;
+    }
+ }
+
+/*--- Extra large devices (large desktops, 1200px and up)---*/
+@media (min-width: 1200px) { 
+    #aboutContent{
+        margin-top: 20%;
+    }
+}
+}

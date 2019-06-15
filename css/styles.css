@@ -1,0 +1,452 @@
+/*---ALL---*/
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+h2 {
+  margin-bottom: 5%;
+}
+/*---NAVIGATION--*/
+#header {
+  border-bottom: 5px solid #1bb3bf;
+  border-width: 100%;
+  background-color: #2E2F33;
+}
+#header img {
+  width: 10%;
+  float: left;
+  margin: 5% 5% 5% 0;
+}
+h1 {
+  font-size: 3.625em;
+  display: inline-block;
+  margin-top: 7%;
+}
+a {
+  color: white;
+}
+a:hover {
+  color: #1bb3bf;
+  text-decoration: none;
+}
+li {
+  display: inline-block;
+  margin: 15% 5% 0 0;
+}
+/*---HAMBURGER MENU---*/
+/* Dropdown Button */
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  /* Show the dropdown menu on hover */
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  /* Dropdown Content (Hidden by Default) */
+}
+.dropdown img {
+  display: none;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  transform: scale(1.2);
+}
+.dropdown .dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  float: right;
+  width: 15%;
+}
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-left: 45%;
+  /* Links inside the dropdown */
+}
+.dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  /* Change color of dropdown links on hover */
+}
+.dropdown .dropdown-content a:hover {
+  background-color: #ddd;
+}
+/*---MAIN---*/
+#chicagoRiver {
+  width: 100%;
+  height: 45%;
+}
+#aboutContent {
+  margin-top: -25%;
+}
+#profilePic {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+}
+/*---FOOTER---*/
+#nav_footer {
+  margin-top: -30%;
+}
+#footer img {
+  width: 35%;
+  float: left;
+  margin: 5% 0 5% 0;
+}
+#footerLogo {
+  display: inline-block;
+  margin-left: 6%;
+}
+#socialMediaIcons {
+  display: inline-block;
+  float: right;
+  text-align: right;
+  width: 15%;
+}
+#socialMediaIcons img {
+  margin: 40% 10% 0 0;
+  width: 15%;
+}
+#socialMediaIcons img:hover {
+  transform: scale(1.1);
+}
+/*---ABOUT ME---*/
+#aboutMe {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  width: 100%;
+}
+#profilePic {
+  height: 75%;
+  margin: auto;
+  display: block;
+  margin: 0 auto;
+}
+/*---RESUME---*/
+#content-left {
+  border-right: 2px solid #A8A8AA;
+  background-color: #EEEEEF;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+span {
+  font-weight: 400;
+  font-style: normal;
+  float: right;
+}
+.experience {
+  list-style-type: circle;
+}
+.experience li {
+  list-style-type: circle;
+  margin: 0 0 0 0;
+}
+h3 {
+  text-decoration: underline #1bb3bf;
+}
+#personalStatement {
+  margin-top: 5%;
+}
+#skills {
+  margin-top: 2%;
+}
+#skillsSec li {
+  margin: 0 5px;
+}
+/*---LANDING---*/
+video {
+  width: 100%;
+  position: absolute;
+  opacity: 0.3;
+}
+#landingTitle:hover {
+  color: #EEEEEF;
+}
+#landingTitle a {
+  color: #EEEEEF;
+}
+#landing a:hover {
+  color: #EEEEEF;
+}
+#landing li:hover {
+  transform: scale(1.1);
+}
+/*---CONTACT---*/
+#contactMe {
+  margin-top: 5%;
+}
+.marTop {
+  margin-top: 5%;
+}
+form {
+  display: inline-block;
+}
+.submit {
+  width: 5em;
+  background-color: #1BB3BF;
+  border-color: #1BB3BF;
+  color: white;
+  margin: 5% 0;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+}
+.submit:hover {
+  background-color: white;
+  border-color: #1BB3BF;
+  color: #1BB3BF;
+}
+input,
+textarea {
+  border: 1px solid #2E2F33;
+}
+/*---ARTICLES---*/
+#articleSec .col-md-4 {
+  display: inline-block;
+  float: right;
+  padding: 0;
+  border: 1px solid #A8A8AA;
+}
+#articleSec {
+  margin-bottom: 10%;
+}
+#myArticles {
+  margin-top: 5%;
+}
+#articleSec h5 {
+  margin: 2% 0 0 2%;
+  color: #1bb3bf;
+}
+#articleSec p {
+  margin: 2% 2% 0 2%;
+  color: #2E2F33;
+}
+#articleSec a {
+  color: #1bb3bf;
+}
+#articleSec a:hover {
+  color: #A8A8AA;
+}
+.back a,
+.next a {
+  color: #2E2F33;
+}
+.back a:hover {
+  color: #1bb3bf;
+}
+.next a:hover {
+  color: #1bb3bf;
+}
+/*---ARTICLE 1---*/
+.articlesBody {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  width: 100%;
+  margin-top: 2%;
+}
+.sportsPic {
+  width: 100%;
+}
+.articleTitle {
+  margin-top: 5%;
+}
+#news h2,
+h4,
+h6 {
+  margin-left: -15px;
+}
+/*---CSS MEDIA QUERIES---*/
+/*--- Extra small devices (portrait phones, less than 576px)---*/
+@media (min-width: 0px) and (max-width: 575.98px) {
+  body {
+    font-size: 4vw;
+  }
+  nav {
+    display: none;
+  }
+  h1 {
+    font-size: 7vw;
+  }
+  #chicagoRiver {
+    width: 100%;
+    height: 55%;
+  }
+  .dropdown {
+    display: inline-block;
+    margin-top: -20%;
+  }
+  .dropdown img {
+    display: inline-block;
+  }
+  #aboutMe {
+    margin-top: 15%;
+    margin-bottom: -5%;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+    width: 100%;
+  }
+  #profilePic {
+    height: 65%;
+    margin-top: 20%;
+  }
+  #nav_footer {
+    text-align: center;
+    margin-top: -20%;
+  }
+  /*--Get rid of logo at smaller sizes--*/
+  #footerLogo {
+    margin-left: 42%;
+    display: none;
+  }
+  #socialMediaIcons {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: none;
+  }
+  #socialMediaIcons img {
+    margin: 10% 10% 0 0;
+    width: 15%;
+    float: left;
+  }
+  #news h2,
+  h4,
+  h6 {
+    margin-left: 0.5%;
+  }
+  .articlesBody {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+    width: 100%;
+    margin: 2%;
+  }
+}
+/*--- Small devices (landscape phones, 576px and up)---*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    font-size: 3vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  nav {
+    display: none;
+  }
+  h1 {
+    font-size: 6vw;
+    margin-top: 7%;
+  }
+  .dropdown {
+    display: block;
+    margin-top: -23%;
+  }
+  .dropdown .dropbtn {
+    width: 10%;
+    float: right;
+  }
+  .dropdown img {
+    width: 15%;
+    display: block;
+  }
+  .dropdown .dropdown-content {
+    margin-left: 63%;
+  }
+  #chicagoRiver {
+    width: 100%;
+    height: 55%;
+  }
+  #aboutMe {
+    margin-top: 15%;
+    margin-bottom: -5%;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+    width: 100%;
+  }
+  #profilePic {
+    height: 60%;
+    margin-top: 20%;
+  }
+  #nav_footer {
+    margin-top: -20%;
+    text-align: center;
+  }
+  #footerLogo {
+    margin-left: 40%;
+    width: 35%;
+    margin-bottom: -12%;
+  }
+  #socialMediaIcons {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: none;
+  }
+  .articlesBody {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+    width: 100%;
+  }
+}
+/*--- Medium devices (tablets, 768px and up)---*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    font-size: 2vw;
+  }
+  h1 {
+    font-size: 5vw;
+    display: inline-block;
+    margin-top: 7%;
+  }
+  #hamburger_menu:hover {
+    display: block;
+    transform: scale(1.2);
+  }
+  .dropdown img {
+    width: 20%;
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  #aboutMe {
+    margin-bottom: 8%;
+  }
+  /*--- Large devices (desktops, 992px and up)---*/
+  /*--- Extra large devices (large desktops, 1200px and up)---*/
+}
+@media (min-width: 768px) and (max-width: 991.98px) and (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    font-size: 1.8vw;
+  }
+  #aboutContent {
+    margin-top: 20%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) and (min-width: 1200px) {
+  #aboutContent {
+    margin-top: 20%;
+  }
+}
